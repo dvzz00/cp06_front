@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
           bookElement.classList.add('book', `book-${book.id}`);
           bookElement.innerHTML = `
             <h3>${book.titulo}</h3>
-            <img src="${book.imagem}" alt="${book.titulo}" width="200px">
+            <img src="${book.imagem}" alt="${book.titulo}">
             <p>${book.resumo}</p>
           `;//caso queria controlar o tamanho da imagem no sass/css, remova a propriedade width="200px"
           bookList.appendChild(bookElement);
